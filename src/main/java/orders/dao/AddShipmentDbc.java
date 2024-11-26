@@ -1,5 +1,6 @@
 package orders.dao;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -46,7 +47,10 @@ public class AddShipmentDbc extends HttpServlet {
 			
 			// Check the result before redirecting
 			if (result != null && result.contains("successfully")) {
-				res.sendRedirect("sucess.jsp");
+				req.setAttribute("trackno", tracking_number);  //putting value to send in req object to sent to other servlet
+		    	RequestDispatcher rd=req.getRequestDispatcher("sucess.jsp");
+		    	rd.forward(req, res);
+				//res.sendRedirect("sucess.jsp");
 			} else {
 				req.setAttribute("errorMessage", result != null ? result : "Failed to process shipment request");
 				req.getRequestDispatcher("errorDbc.jsp").forward(req, res);

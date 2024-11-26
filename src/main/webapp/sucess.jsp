@@ -18,7 +18,7 @@
             <h1>Success!</h1>
             <p class="status-message">Your shipment has been successfully created.</p>
             <div class="tracking-info">
-                <p>Tracking Number: <strong>${trackingNumber}</strong></p>
+                <p>Tracking Number: <strong>${trackno}</strong></p>
                 <small>Keep this number for future reference</small>
             </div>
             <div class="status-actions">

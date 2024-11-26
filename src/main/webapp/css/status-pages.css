@@ -1,0 +1,158 @@
+/* Status Pages Styles */
+.status-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.status-icon {
+    margin-bottom: 25px;
+}
+
+.status-icon i {
+    font-size: 80px;
+    animation: scaleIn 0.5s ease-out;
+}
+
+/* Success specific styles */
+.success .status-icon i {
+    color: #28a745;
+}
+
+/* Error specific styles */
+.error .status-icon i {
+    color: #dc3545;
+}
+
+.status-content h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+.status-message {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.tracking-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.tracking-info strong {
+    color: #4A90E2;
+    font-size: 1.2em;
+}
+
+.error-details {
+    background: #fff8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #ffcdd2;
+}
+
+.error-code {
+    margin-top: 10px;
+    color: #999;
+}
+
+.status-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-help {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #4A90E2;
+    color: white;
+}
+
+.btn-secondary {
+    background: #f8f9fa;
+    color: #4A90E2;
+    border: 1px solid #4A90E2;
+}
+
+.btn-help {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+}
+
+.btn-secondary:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+}
+
+.btn-help:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .status-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .status-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-help {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .status-icon i {
+        font-size: 60px;
+    }
+
+    .status-content h1 {
+        font-size: 2em;
+    }
+} 

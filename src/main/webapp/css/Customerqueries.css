@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/* Main Layout */
+.queries-grid {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 80px);
+}
+
+/* Queries List Styles */
+.queries-list {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.list-header {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bulk-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.query-items {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.query-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.query-item:hover {
+    background-color: #f8f9fa;
+}
+
+.query-item.unread {
+    background-color: #f8f9fa;
+}
+
+.query-item.selected {
+    background-color: #e3f2fd;
+}
+
+.item-priority {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.item-priority.high { color: #dc3545; }
+.item-priority.medium { color: #ffc107; }
+.item-priority.low { color: #28a745; }
+
+.item-content {
+    flex: 1;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-header h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.customer-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.query-preview {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    background-color: #e9ecef;
+    color: #495057;
+    margin-right: 5px;
+}
+
+/* Query Details Styles */
+.query-details {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 1fr;
+}
+
+.details-header {
+    grid-column: 1 / -1;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.customer-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-info p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.query-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.details-content {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Message Thread Styles */
+.query-thread {
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+.message.customer {
+    margin-left: auto;
+}
+
+.message.staff {
+    margin-right: auto;
+}
+
+.message-header {
+    margin-bottom: 5px;
+}
+
+.message-content {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.message.customer .message-content {
+    background: #e3f2fd;
+}
+
+.message-attachments {
+    margin-top: 10px;
+}
+
+.attachment {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Reply Form Styles */
+.reply-form {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.reply-type {
+    display: flex;
+    gap: 10px;
+}
+
+.form-editor {
+    position: relative;
+}
+
+.form-editor textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.editor-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.form-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Customer Sidebar Styles */
+.customer-sidebar {
+    border-left: 1px solid #eee;
+    padding: 20px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.related-shipment,
+.previous-query {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.status.pending { background: #fff3cd; color: #856404; }
+.status.resolved { background: #d4edda; color: #155724; }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .queries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .query-details {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-sidebar {
+        border-left: none;
+        border-top: 1px solid #eee;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .query-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+}

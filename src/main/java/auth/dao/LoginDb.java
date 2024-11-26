@@ -15,7 +15,7 @@ public class LoginDb {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
             
-            String query = "SELECT email, password, role FROM users WHERE email = ? AND password = ?";
+            String query = "SELECT email, password, role, first_name FROM users WHERE email = ? AND password = ?";
             ps = con.prepareStatement(query);
             ps.setString(1, email);
             ps.setString(2, password);

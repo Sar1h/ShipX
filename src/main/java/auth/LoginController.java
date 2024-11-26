@@ -38,9 +38,11 @@ public class LoginController extends HttpServlet {
                 // Redirect based on role
                 if ("admin".equals(userData.getRole())) {
                 	session.setAttribute("User", userData.getName());
+                    session.setAttribute("key", userData.getEmail());
                     response.sendRedirect(request.getContextPath() + "/admin/ordersPanel.jsp");
                 } else {
                 	session.setAttribute("User", userData.getName());
+                    session.setAttribute("key", userData.getEmail());
                     response.sendRedirect(request.getContextPath() + "/ClientDash.jsp");
                 }
             } else {

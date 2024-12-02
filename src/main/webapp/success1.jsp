@@ -18,7 +18,7 @@
             <h1>Success!</h1>
             <p class="status-message">Thank you! We will.</p>
             <div class="status-actions">
-                <a href="ClientDash.jsp" class="btn-primary">
+                <a href="index.jsp" class="btn-primary">
                     <i class="fas fa-home"></i> Back to Home
                 </a>
             </div>

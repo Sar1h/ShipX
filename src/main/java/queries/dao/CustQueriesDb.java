@@ -12,6 +12,7 @@ import auth.model.SignupData;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import queries.model.CustQueriesData;
 
 public class CustQueriesDb {
@@ -20,11 +21,12 @@ public class CustQueriesDb {
 
     public String setDb(CustQueriesData d, HttpServletRequest req, HttpServletResponse res) {
         try {
-            // Load the MySQL driver
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            // Establish a connection to the database
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
+        	Class.forName("com.mysql.cj.jdbc.Driver");
+            String url = "jdbc:mysql://13.203.63.17:3306/courier"; // Replace <EC2_PUBLIC_IP> with the public IP or DNS of your EC2 instance
+            String username = "root"; // Replace with your database username
+            String pass = "root1"; // Replace with your database pas            
+            System.out.println("Attempting database connection to: " + url);
+            con= DriverManager.getConnection(url, username, pass);
 
             // Prepare an SQL query to insert data
             String query = "INSERT INTO custqueries (name, email, subject, message) VALUES (?, ?, ?, ?)";
@@ -73,8 +75,9 @@ public class CustQueriesDb {
     private void handleError(HttpServletRequest req, HttpServletResponse res, String errorMessage) {
         try {
             req.setAttribute("errorMessage", errorMessage);
-            RequestDispatcher rd = req.getRequestDispatcher("errorDbc.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("errorDbc2.jsp"); 
             rd.forward(req, res);
+            
         } catch (Exception e) {
             e.printStackTrace();
         }

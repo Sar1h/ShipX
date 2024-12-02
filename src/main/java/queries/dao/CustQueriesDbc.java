@@ -5,6 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import queries.model.CustQueriesData;
 
 import java.io.IOException;
@@ -25,5 +26,6 @@ public class CustQueriesDbc extends HttpServlet {
         String m = s.setDb(d, request, response);
         out.println(m);
         response.sendRedirect("success1.jsp");
+        
     }
 }

@@ -24,7 +24,11 @@ public class AddShipmentDb {
             }
 
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
+            String url = "jdbc:mysql://13.203.63.17:3306/courier"; // Replace <EC2_PUBLIC_IP> with the public IP or DNS of your EC2 instance
+            String username = "root"; // Replace with your database username
+            String pass = "root1"; // Replace with your database pas            
+            System.out.println("Attempting database connection to: " + url);
+            con= DriverManager.getConnection(url, username, pass);
 
             // Debug logging
             System.out.println("Database connection established");

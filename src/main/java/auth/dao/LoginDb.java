@@ -12,9 +12,14 @@ public class LoginDb {
         LoginData loginData = null;
         
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
+        	Class.forName("com.mysql.cj.jdbc.Driver");
             
+            // Replace with your EC2 instance's public IP or DNS and credentials
+            String url = "jdbc:mysql://13.203.63.17:3306/courier"; // Replace <EC2_PUBLIC_IP> with the public IP or DNS of your EC2 instance
+            String username = "root"; // Replace with your database username
+            String pass = "root1"; // Replace with your database password
+
+            con = DriverManager.getConnection(url, username, pass);
             String query = "SELECT email, password, role, first_name FROM users WHERE email = ? AND password = ?";
             ps = con.prepareStatement(query);
             ps.setString(1, email);
@@ -49,5 +54,5 @@ public class LoginDb {
         }
         
         return loginData;
-    }
+    }			
 } 

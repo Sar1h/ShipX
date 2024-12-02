@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastTrack Courier Services</title>
+    <title>ShipX Courier Services</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -70,7 +70,7 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2>Why Choose FastTrack</h2>
+            <h2>Why Choose ShipX</h2>
             <div class="features-grid">
                 <div class="feature">
                     <i class="fas fa-clock"></i>
@@ -99,24 +99,61 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
+           <h1><b>About Us</b></h1>
             <div class="about-content">
             <br><br>
-                <div class="about-text">
-                    <h2>About FastTrack Courier</h2>
-                    <p>With over 15 years of experience in the logistics industry, FastTrack Courier has been delivering excellence and reliability to our customers worldwide.</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check"></i> Professional and experienced team</li>
-                        <li><i class="fas fa-check"></i> Modern tracking technology</li>
-                        <li><i class="fas fa-check"></i> Customized shipping solutions</li>
-                        <li><i class="fas fa-check"></i> Environmentally conscious operations</li>
-                    </ul>
-                    <br>
-                    <a href="about" class="btn-primary">Read More</a>
-                </div>
+               <p>
+            At ShipX Courier Services, we are committed to delivering your packages with unmatched reliability, speed, and care. 
+            Whether you’re sending important documents, parcels, or personal items, our cutting-edge logistics network ensures seamless 
+            delivery from pickup to destination. Experience hassle-free courier services designed to meet all your needs.
+        </p>
+        <br>
+        <div class="about-us">
+            <h2>What Makes Us Different?</h2>
+            <p>
+                We believe that delivering a package is more than just transportation—it’s about trust, efficiency, and excellence. 
+                From real-time tracking to secure handling, we focus on providing a comprehensive experience that puts you first. 
+                Our services are tailored to individuals and businesses, making us your go-to solution for all shipping requirements.
+            </p>
+        </div><br>
+        
+        <div >
+            <h2>Our Key Features</h2>
+            <ul>
+                <li>
+                    <strong>Real-Time Tracking:</strong> Monitor your shipments in real time with our advanced tracking system, providing 
+                    transparency and peace of mind.
+                </li>
+                <li>
+                    <strong>Fast and Reliable Delivery:</strong> With optimized routes and an efficient logistics network, we ensure 
+                    your packages reach their destination on time.
+                </li>
+                <li>
+                    <strong>Secure Package Handling:</strong> Your packages are our priority. We handle every shipment with the utmost care 
+                    to guarantee safe delivery.
+                </li>
+                <li>
+                    <strong>24/7 Customer Support:</strong> Our dedicated team is available round the clock to assist you with any queries 
+                    or concerns.
+                </li>
+                <li>
+                    <strong>Flexible Shipping Options:</strong> Choose from same-day, next-day, or standard delivery services to meet your specific needs.
+                </li>
+            </ul>
+        </div><br><br><br>
+
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Step 1:</strong> Book your shipment online or at any of our service centers.</li>
+                <li><strong>Step 2:</strong> Track your shipment in real time using our tracking tools.</li>
+                <li><strong>Step 3:</strong> Receive updates at every step until your package is safely delivered.</li>
+            </ol>
+        </div>
                 <!-- div class="about-image">
                     <img src="images/about-img.jpg" alt="About FastTrack">
-                </div--><br><br>	
-            </div>
+                </div--><br><br>
+                </div>
         </div>
     </section>
 
@@ -137,7 +174,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <p>info@fasttrack.com</p>
+                        <p>info@ShipXofficial.com</p>
                     </div>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -193,7 +230,7 @@
                 <h3>Contact Info</h3>
                 <ul>
                     <li><i class="fas fa-phone"></i> +91 8767157052</li>
-                    <li><i class="fas fa-envelope"></i> info@fastrack.com</li>
+                    <li><i class="fas fa-envelope"></i> info@ShipXofficial.com</li>
                     <li><i class="fas fa-map-marker-alt"></i> SPIT, Azad Nagar, Mumbai 400058</li>
                 </ul>
             </div>
@@ -212,7 +249,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 FastTrack Courier. All rights reserved.</p>
+            <p>&copy; 2024 ShipX Courier. All rights reserved.</p>
         </div>
     </footer>
 

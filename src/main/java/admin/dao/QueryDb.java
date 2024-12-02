@@ -7,8 +7,12 @@ import admin.model.QueryData;
 public class QueryDb {
     private Connection getConnection() throws SQLException {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
+        	 Class.forName("com.mysql.cj.jdbc.Driver");
+             String url = "jdbc:mysql://13.203.63.17:3306/courier"; // Replace <EC2_PUBLIC_IP> with the public IP or DNS of your EC2 instance
+             String username = "root"; // Replace with your database username
+             String pass = "root1"; // Replace with your database pas            
+             System.out.println("Attempting database connection to: " + url);
+             return DriverManager.getConnection(url, username, pass);
         } catch (ClassNotFoundException e) {
             throw new SQLException("Database driver not found: " + e.getMessage());
         }

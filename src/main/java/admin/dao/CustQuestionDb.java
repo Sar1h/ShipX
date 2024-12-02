@@ -11,8 +11,11 @@ public class CustQuestionDb {
     private ResultSet rs = null;
 
     private Connection getConnection() throws SQLException, ClassNotFoundException {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
+    	String url = "jdbc:mysql://13.203.63.17:3306/courier"; // Replace <EC2_PUBLIC_IP> with the public IP or DNS of your EC2 instance
+        String username = "root"; // Replace with your database username
+        String pass = "root1"; // Replace with your database pas            
+        System.out.println("Attempting database connection to: " + url);
+        return DriverManager.getConnection(url, username, pass);
     }
 
     public List<CustQuestionData> getAllQuestions(String sortBy) {

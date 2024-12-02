@@ -121,7 +121,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="declaredValue">Declared Value ($)*</label>
+                                <label for="declaredValue">Declared Value (₹)*</label>
                                 <input type="number" id="declaredValue" name="declaredValue" step="0.01" required>
                             </div>
                             <div class="form-group full-width">

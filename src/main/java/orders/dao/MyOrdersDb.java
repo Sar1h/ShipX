@@ -6,9 +6,10 @@ import java.util.List;
 import orders.model.OrderData;
 
 public class MyOrdersDb {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/courier";
+	
+    private static final String DB_URL = "jdbc:mysql://13.203.63.17:3306/courier";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "root";
+    private static final String DB_PASSWORD = "root1";
 
     public List<OrderData> getUserOrders(String userEmail) {
         List<OrderData> orders = new ArrayList<>();

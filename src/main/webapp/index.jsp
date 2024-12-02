@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastTrack Courier Services</title>
+    <title>ShipX Courier Services</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -22,7 +22,7 @@
                 <a href="userlogin.jsp">Book Shipment</a>
                 <a href="#services">Services</a>
                 <a href="#about">About Us</a>
-                <a href="contactUs.jsp">Contact</a>
+                <a href="userlogin.jsp">Contact</a>
                 <a href="userlogin.jsp" class="btn-login">Login</a>
                 <a href="signup.jsp" class="btn-signup">Sign Up</a>
             </div>
@@ -89,7 +89,7 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2>Why Choose FastTrack</h2>
+            <h2>Why Choose ShipX</h2>
             <div class="features-grid">
                 <div class="feature">
                     <i class="fas fa-clock"></i>
@@ -123,7 +123,7 @@
             <div class="about-content">
             <br><br>
                <p>
-            At Swift Courier Services, we are committed to delivering your packages with unmatched reliability, speed, and care. 
+            At ShipX Courier Services, we are committed to delivering your packages with unmatched reliability, speed, and care. 
             Whether you’re sending important documents, parcels, or personal items, our cutting-edge logistics network ensures seamless 
             delivery from pickup to destination. Experience hassle-free courier services designed to meet all your needs.
         </p>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <p>info@fasttrack.com</p>
+                        <p>info@ShipXofficial.com</p>
                     </div>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -250,7 +250,7 @@
                 <h3>Contact Info</h3>
                 <ul>
                     <li><i class="fas fa-phone"></i> +91 8767157052</li>
-                    <li><i class="fas fa-envelope"></i> info@fastrack.com</li>
+                    <li><i class="fas fa-envelope"></i> info@ShipXofficial.com</li>
                     <li><i class="fas fa-map-marker-alt"></i> SPIT, Azad Nagar, Mumbai 400058</li>
                 </ul>
             </div>
@@ -269,7 +269,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 FastTrack Courier. All rights reserved.</p>
+            <p>&copy; 2024 ShipX Courier. All rights reserved.</p>
         </div>
     </footer>
 

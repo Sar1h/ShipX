@@ -17,11 +17,12 @@ public class SignupDb {
 
     public String setDb(SignupData d, HttpServletRequest req, HttpServletResponse res) {
         try {
-            // Load the MySQL driver
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            // Establish a connection to the database
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/courier", "root", "root");
+        	 Class.forName("com.mysql.cj.jdbc.Driver");
+             String url = "jdbc:mysql://13.203.63.17:3306/courier"; // Replace <EC2_PUBLIC_IP> with the public IP or DNS of your EC2 instance
+             String username = "root"; // Replace with your database username
+             String pass = "root1"; // Replace with your database pas            
+             System.out.println("Attempting database connection to: " + url);
+             con= DriverManager.getConnection(url, username, pass);
 
             // Prepare an SQL query to insert data
             String query = "INSERT INTO users (first_name, last_name, email, phone_no, address, password) VALUES (?, ?, ?, ?, ?, ?)";
